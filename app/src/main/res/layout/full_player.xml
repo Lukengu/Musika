@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/login_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView android:id="@+id/album" android:layout_width="match_parent" android:layout_height="300dp" android:scaleType="fitCenter" />
+        <SeekBar android:id="@+id/mSeekBar" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_below="@id/album"
+            />
+        <RelativeLayout   android:background="#33333311"
+            android:paddingLeft="15dp" android:paddingRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mSeekBar"
+            android:id="@+id/bg"
+           >
+            <ImageView
+                android:layout_centerHorizontal="true" android:layout_alignParentLeft="true"
+                android:id="@+id/skip_back"  android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_skip_previous_black_24dp"  />
+            <ImageView   android:layout_centerInParent="true"
+                android:id="@+id/play" android:layout_width="64dp" android:layout_height="64dp"   />
+            <ImageView  android:layout_centerHorizontal="true" android:layout_alignParentRight="true" android:id="@+id/skip_forward"  android:layout_width="64dp" android:layout_height="64dp"
+                android:src="@drawable/ic_skip_next_black_24dp"  />
+        </RelativeLayout>
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/trackList"
+            android:scrollbars="vertical"
+            android:layout_below="@id/bg"/>
+
+    </RelativeLayout>
+
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Application"
+    tools:showIn="@layout/app_bar_application">
+
+<!--RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="pro.novatechsolutions.app.musika.Application"
+    android:layout_marginTop="@dimen/nav_header_height_semi"-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_frame"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        app:layout_constraintEnd_toEndOf="@+id/content_frame"
+        app:layout_constraintBottom_toBottomOf="@+id/content_frame"
+        android:background="@drawable/footer_background">
+
+        <TextView   android:id="@+id/text_footer"  android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"  android:paddingTop="8dp" android:paddingBottom="8dp"
+            android:paddingLeft="30dp"  android:paddingRight="30dp" android:gravity="center" />
+
+
+    </LinearLayout>
+
+
+<!--/RelativeLayout-->
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+   >
+
+
+    <pro.novatechsolutions.app.musika.coverflow.FancyCoverFlow
+        android:id="@+id/fancyCoverFlow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout android:background="@drawable/side_nav_bar" android:layout_width="match_parent"
+        android:layout_height="28dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_equalizer_black_24dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/artist_title"
+
+            />
+        <TextView android:id="@+id/artist_title_text" android:textColor="@color/colorWhite" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="TOP ARSTIST" android:layout_centerVertical="true" android:layout_toRightOf="@id/artist_title" />
+    </RelativeLayout>
+    <GridView android:id="@+id/top_artists" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="2dp" android:verticalSpacing="2dp" android:numColumns="2" />
+
+
+    <RelativeLayout android:background="@drawable/side_nav_bar" android:layout_width="match_parent" android:layout_height="28dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_playlist_accent_24dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/playlist_title"
+
+            />
+        <TextView  android:textColor="@color/colorWhite" android:id="@+id/playlist_title_text"  android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TOP PLAYLIST" android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/playlist_title" />
+    </RelativeLayout>
+    <GridView android:id="@+id/top_playlists" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="2dp" android:verticalSpacing="2dp" android:numColumns="2" />
+</LinearLayout>
+</ScrollView>
